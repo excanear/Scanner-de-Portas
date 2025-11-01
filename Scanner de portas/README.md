@@ -19,33 +19,6 @@ Scanner TCP simplificado para Windows escrito em C usando Winsock. Implementa va
 - `compile_vs.bat` - Script para Visual Studio Build Tools
 - `compile.sh` - Script para ambiente MSYS2 bash
 
-## 🔧 Compilação
-
-### Opção 1: MSYS2 UCRT64 (Recomendada)
-
-1. **Instalar MSYS2**:
-   - Baixe em: https://www.msys2.org/
-   - Execute o instalador e instale em `C:\msys64`
-
-2. **Configurar ambiente**:
-   ```bash
-   # No terminal MSYS2 UCRT64
-   pacman -Syu
-   pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
-   ```
-
-3. **Compilar**:
-   ```bash
-   # Abra "MSYS2 UCRT64" (não o PowerShell!)
-   cd "/c/Users/Henry/OneDrive/Área de Trabalho/Scanner de portas"
-   
-   # Versão simplificada (recomendada)
-   gcc -O2 scanner_simple.c -lws2_32 -o scanner_simple.exe
-   
-   # Versão completa (com threads)
-   gcc -O2 src/main.c src/scanner.c -lws2_32 -o scanner.exe
-   ```
-
 ### Opção 2: Visual Studio
 
 1. **Abrir "x64 Native Tools Command Prompt for VS"**
@@ -180,3 +153,4 @@ Para problemas de compilação:
 **Criado com**: C, Winsock2, Win32 Threads  
 **Compatibilidade**: Windows 7+ (x64)  
 **Licença**: Uso educacional e teste em ambiente próprio
+
