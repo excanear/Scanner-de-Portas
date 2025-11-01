@@ -14,10 +14,6 @@ Scanner TCP simplificado para Windows escrito em C usando Winsock. Implementa va
 - **Teste Básico**:
   - `test.c` - Teste mínimo de Winsock
 
-### Scripts de Compilação
-- `compile.bat` - Script automático para MinGW/MSYS2
-- `compile_vs.bat` - Script para Visual Studio Build Tools
-- `compile.sh` - Script para ambiente MSYS2 bash
 
 ## 🚀 Uso
 
